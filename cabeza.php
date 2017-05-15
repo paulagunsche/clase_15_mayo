@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <?php
-$title = "Mi barrio,Mi historia";
+$title = "Mi barrio, Mi historia";
 $descripcion = "Pongan acá su descripción.";
 ?>
 <head>

@@ -3,7 +3,7 @@
 <h2>Artículos</h2>
 <?php
 // basta con la línea de PHP para llamar al imdb-movies.csv y asignarlo a la variable $csv
-$csv = array_map('str_getcsv', file('datos.csv'));
+$csv = array_map('str_getcsv', file('https://raw.githubusercontent.com/ChungKat/clase_15_mayo/master/datos.csv'));
 // pero debo hacer un pequeño ajuste, para eliminar del arreglo el encabezado del imdb-movies.csv
 array_walk($csv, function(&$a) use ($csv) {$a = array_combine($csv[0], $a);});
 array_shift($csv);
@@ -19,6 +19,7 @@ for($a = 0; $a < $total = count($csv); $a++){?>
       <!--<h6>Agreguen aquí la información en Data</h6>-->
       <p><?php echo $csv[$a]['texto'];?></p>
       <p><?php echo $csv[$a]['apa'];?></p>
+      <img src="<?php echo $csv[$a]['images'];?>" class="img-responsive">
       <p><?php echo $csv[$a]['vinculos'];?></p>
       <p><?php echo $csv[$a]['tags'];?></p>
 
