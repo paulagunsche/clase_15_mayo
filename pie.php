@@ -1,5 +1,5 @@
 <footer>
-<p>Mayo de 2017 &bull; Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional</a>.</p>
+<p>Mayo de 2017 &bull; Este sitio de "<?php echo($title);?>" está bajo una licencia<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional</a>.</p>
 </footer>
 </div><!--/col-sm-10 col-sm-offset-1-->
 </div><!--/row-->
